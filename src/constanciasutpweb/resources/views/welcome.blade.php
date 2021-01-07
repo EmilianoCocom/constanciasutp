@@ -1,100 +1,132 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app_universidad')
+@section('content')
 
-        <title>Laravel</title>
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Control Escolar
+    </h1>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.php">Inicio</a>
+      </li>
+      <li class="breadcrumb-item active">Control Escolar</li>
+    </ol>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- Portfolio Item Row -->
+    <div class="row">
 
-            .full-height {
-                height: 100vh;
-            }
+      
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+    </div>
+    <!-- /.row -->
 
-            .position-ref {
-                position: relative;
-            }
+    <!-- Related Projects Row -->
+    <h4 class="my-4">Módulo de información del Departamento de Control Escolar de la UTP.</h4>
+    <br>
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+<h4>Aquí te daremos a conocer los trámites y servicios que ofrecemos durante tu ingreso, permanencia y egreso de la Universidad.</h4>
+ <br>
+<DIV ALIGN="center"><h4>SELECCIONA UNA OPCIÓN DE SERVICIO DE CONTROL ESCOLAR QUE DESEAS CONSULTAR </h4></DIV>
+  <br>
+  <br>
+</h4>
 
-            .content {
-                text-align: center;
-            }
+<CENTER>
+<div class="row">
 
-            .title {
-                font-size: 84px;
-            }
+      <div class="col-md-4 col-sm-4 mb-4">
+        <a href="https://utpyucatan.wixsite.com/control-escolar/inscripciones-y-reinscripciones">
+          <a href="https://utpyucatan.wixsite.com/control-escolar/inscripciones-y-reinscripciones">
+						<img src="img/inscripciones.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> INSCRIPCIONES Y REINSCRIPCIONES </DIV></h5>
+						</a>
+      </div>
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+      <div class="col-md-4 col-sm-4 mb-4">
+        <a href="controlescolar">
+						<img src="img/solicitudes.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> SOLICITUD DE CONSTANCIAS </DIV></h5>
+						</a>
+      </div>
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+      <div class="col-md-4 col-sm-4 mb-4">
+       	<a href="https://utpyucatan.wixsite.com/control-escolar/proceso-de-baja">
+						<img src="img/baja.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> PROCESO DE BAJA </DIV></h5>
+						</a>
+      </div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+    
+    </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+   </CENTER>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+    
+     <br>
+<CENTER><h4>TAMBIÉN PUEDES SELECCIONAR DIRECTAMENTE UNA SECCIÓN DE NUESTROS SERVICIOS.</h4></CENTER>
+  <br>
+    
+    <CENTER>
+     <div class="row">
+
+      <div class="col-md-4 col-sm-4 mb-4">
+        <a href="https://utpyucatan.wixsite.com/control-escolar/informacion">
+          <a href="https://utpyucatan.wixsite.com/control-escolar/informacion">
+						<img src="img/información.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> INFORMACIÓN </DIV></h5>
+						</a>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mb-4">
+        <a href="https://utpyucatan.wixsite.com/control-escolar/ingreso-baja">
+						<img src="img/ingreso y baja.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> INGRESO Y BAJA </DIV></h5>
+						</a>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mb-4">
+       	<a href="https://utpyucatan.wixsite.com/control-escolar/servicios">
+						<img src="img/servicios_.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> SERVICIOS ADMINISTRATIVOS </DIV></h5>
+						</a>
+      </div>
+
+     
+    </div>
+    </CENTER>
+    <br>
+    
+    <CENTER>
+    <div class="row">
+        
+         <div class="col-md-4 col-sm-4 mb-4">
+        	<a href="https://utpyucatan.wixsite.com/control-escolar/becas">
+						<img src="img/becas_.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> BECAS </DIV></h5>
+						</a>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mb-4">
+        <a href="https://utpyucatan.wixsite.com/control-escolar/seguridad-medica">
+          <a href="https://utpyucatan.wixsite.com/control-escolar/seguridad-medica">
+						<img src="img/seguridad médica.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> SEGURIDAD MÉDICA </DIV></h5>
+						</a>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mb-4">
+        <a href="https://utpyucatan.wixsite.com/control-escolar/egreso-titulacion">
+						<img src="img/egreso y titulación.png" class="img-responsive" />
+						<h5><DIV ALIGN="center"><P> EGRESO Y TITULACIÓN </DIV></h5>
+						</a>
+      </div>
+
+      
+    </div>
+   </CENTER>
+    
+    <br>
+	<br>
+
+  
+@endsection
