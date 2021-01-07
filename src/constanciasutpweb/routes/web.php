@@ -28,8 +28,7 @@ Route::get('/controlescolar', function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('catalogo-constancias', 'CatalogoConstanciasController');
 Route::get('list-users','UserController@index');
-
+Route::resource('estatus-constancia', 'EstatusConstanciaController');
 Route::get('/constancias-constancia-de-estudios-simple', 'SolicitudConstanciaController@index');
